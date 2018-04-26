@@ -1,8 +1,10 @@
-# Data Visualization Project
+# Visualizing Main Characters of Game of Thrones
 
-## Visualizing Main Characters of Game of Thrones
+## Sample Images
 
-### Background
+Checkout the system images in ![here](https://github.com/xrdcrab/GoTVisualization/blob/master/main_view_full_image.png) and ![here](https://github.com/xrdcrab/GoTVisualization/blob/master/main_view_full_image.png).
+
+## Background
 
 Our data is from the Game of Thrones wiki.
 
@@ -14,7 +16,7 @@ Our data is from the Game of Thrones wiki.
 
 * Another purpose of this visualization is we want people who haven’t seen this book (such as a member of our group) to gain knowledge of this book.
 
-### Data Collection & Cleaning
+## Data Collection & Cleaning
 
 * Our first dataset is in graphml format. However, D3 doesn't support this format and it is hard to convert to csv format file. So, we wrote Python script to collect the major characters of GoT data from its wiki web pages into a csv file.
 
@@ -26,7 +28,7 @@ Our data is from the Game of Thrones wiki.
 
 * We initially thought putting all information except houses and death cause of the characters as the Collapsible Tree nodes in visualization will be great, but not all characters are provided with this data on wiki and it will make the edges line more complicated among characters. Due to the same reason, we didn’t put the killer of the characters in visualization.
 
-### Vis-System Description
+## Vis-System Description
 
 * The vis-system is pretty straight forward. It contains two graphs.
 
@@ -36,7 +38,7 @@ Our data is from the Game of Thrones wiki.
 
 * The cause-of-death graph is similar to the main graph. In this chord graph, inner labels are changed to “death cause”, and outer arcs are deceased characters. Width of arcs Represents the number of appearances of this character.
 
-### Interactions
+## Interactions
 
 * In the main graph, move mouse to the character label will generate a pop up window displaying the characters information. We made this pop up window as a table because character’s data is highly discrete. For example, it’s very hard to find inner connections between character’s gender and house.
 
@@ -46,7 +48,7 @@ Our data is from the Game of Thrones wiki.
 
 * Move mouse to the house name will hide strings linked to unrelated characters. Users can also click outer arcs and labels to maintain in this view.
 
-### Interesting Results
+## Interesting Results
 
 * The first interesting result is roughly 40% major characters deceased. Nobody is safe. And there are various ways of death. Even the most popular way, blade, only kill 7 characters.
 
@@ -55,10 +57,12 @@ Our data is from the Game of Thrones wiki.
 * The last interesting result is 54 characters loyalty to 32 houses. We initially expected major characters only exist in several famous houses like Lannister or Stark. We think this is exactly the reason why this book is attractive: small house also has a big influence, like an epic.
 
 
-### How to use
+## How to use
 
 1. open simple server using python -m SimpleHTTPServer 8888
 2. find the system folder and enter
 3. users now can click outer arcs and labels.
 
 @2018, Ruida Xie, Tong Wang, All rights reserved
+
+
