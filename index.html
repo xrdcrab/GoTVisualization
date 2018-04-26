@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="Ruida Xie & Tong Wang">
+		<title>Game of Thrones</title>
+		<!-- Mobile Specific Metas -->
+	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<!-- Google fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Macondo+Swash+Caps|Macondo" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Cormorant:300,400" rel="stylesheet">
+	    <!-- Script-->
+		<script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
+		<script type="text/javascript" src="js/loom.js"></script>
+
+		<script id="charTemplate" type="text/x-jquery-tmpl">
+			<div id='node-name'>${name}</div>
+	
+			<div class='node-char' id='node-image-references'>
+				<img src="${imagesrc}" alt="thrones" width="100" height="100">
+			</div>
+			<div class='node-char' id='node-char-appearance'>
+				<div class='node-label'>Status</div>
+				<div class='node-data-color' style='background-color: ${color};'></div>
+				<div class='node-data-short'>${status}</div>
+			</div>
+			<div class='node-char' id='node-house-references'>
+				<div class='node-label'>House</div>
+				<div class='node-data'></div>
+			</div>
+			<div class='node-char' id='node-episode-references'>
+				<div class='node-label'>Appearance</div>
+				<div class='node-data'>${episodes} episodes</div>
+			</div>
+			<div class='node-char' id='node-season-references'>
+				<div class='node-label'>Season(s)</div>
+				<div class='node-data'>${season}</div>
+			</div>
+			<div class='node-char' id='node-culture'>
+				<div class='node-label'>Culture</div>
+				<div class='node-data'>${culture}</div>
+			</div>
+			<div class='node-char' id='node-religion'>
+				<div class='node-label'>Religion</div>
+				<div class='node-data'>${religion}</div>
+			</div>
+			<div class='node-char' id='node-portrayed'>
+				<div class='node-label'>Portrayed</div>
+				<div class='node-data'>${portrayed}</div>
+			</div>
+		</script>
+	
+		<script id="listTemplate" type="text/x-jquery-tmpl">
+			<div class='node-list-item'>${item}</div>
+		</script>
+		<!-- CSS-->
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		</br><img src="got.png">
+	    
+		<div id='node-info' class='got-popup'></div>
+		<div class="wrap">
+			<div id="GoTVis"></div>
+		</div>
+		<button class='button' id='btn-death'>Show Deceased</button>
+		<button class="button" id="btn-back" onclick="refreshFunc()">Back To Main Vis</button>
+		<script>
+			function refreshFunc() {
+				location.reload();
+			}
+		</script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/death.js"></script>
+	</body>
+</html>
