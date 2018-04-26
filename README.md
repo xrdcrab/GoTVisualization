@@ -2,7 +2,8 @@
 
 ## Sample Images
 
-Checkout the system images in ![here](https://github.com/xrdcrab/GoTVisualization/blob/master/main_view_full_image.png) and ![here](https://github.com/xrdcrab/GoTVisualization/blob/master/main_view_full_image.png).
+![here](https://github.com/xrdcrab/GoTVisualization/blob/master/main_view_full_image.png)
+![here](https://github.com/xrdcrab/GoTVisualization/blob/master/main_view_full_image.png)
 
 ## Background
 
@@ -40,11 +41,11 @@ Our data is from the Game of Thrones wiki.
 
 ## Interactions
 
-* In the main graph, move mouse to the character label will generate a pop up window displaying the characters information. We made this pop up window as a table because character’s data is highly discrete. For example, it’s very hard to find inner connections between character’s gender and house.
+* In the main graph, move mouse to the character label will generate a pop up window displaying the characters information. We made this pop up window as a table because character’s data is highly discrete. For example, it’s very hard to find inner connections between character’s gender and house.![here](https://github.com/xrdcrab/GoTVisualization/blob/master/interaction_popup.png)
 
-* Meanwhile, houses the character loyal to will highlighted and unrelated houses will Hide. The title will show the characters name and appeared number.
+* Meanwhile, houses the character loyal to will highlighted and unrelated houses will Hide. The title will show the characters name and appeared number. ![here](https://github.com/xrdcrab/GoTVisualization/blob/master/interaction_family.png)
 
-* Cause-of-death graph have similar interactions with main graph.
+* Cause-of-death graph have similar interactions with main graph.![here](https://github.com/xrdcrab/GoTVisualization/blob/master/death.png)
 
 * Move mouse to the house name will hide strings linked to unrelated characters. Users can also click outer arcs and labels to maintain in this view.
 
